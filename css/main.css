@@ -6507,3 +6507,17 @@ label.panel-block {
 
 .is-0 {
   font-size: 5em; }
+
+@keyframes fadeAndMove {
+  from {
+    opacity: 0;
+    transform: translateY(0); }
+  to {
+    opacity: 1;
+    transform: translateY(-100px); } }
+
+.fadeAndMove {
+  animation-name: fadeAndMove;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards; }
