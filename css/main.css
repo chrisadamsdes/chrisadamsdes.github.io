@@ -6510,14 +6510,27 @@ label.panel-block {
 
 @keyframes fadeAndMove {
   from {
-    opacity: 0;
+    opacity: 1;
     transform: translateY(0); }
   to {
-    opacity: 1;
-    transform: translateY(-100px); } }
+    opacity: 0;
+    transform: translateY(100px); } }
 
+/*@keyframes animation-delay {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}*/
 .fadeAndMove {
   animation-name: fadeAndMove;
-  animation-duration: 1s;
+  animation-duration: 1000ms;
   animation-timing-function: ease;
-  animation-fill-mode: forwards; }
+  animation-fill-mode: forwards;
+  animation-direction: reverse; }
+
+.animation-delay {
+  animation-delay: 500ms;
+  opacity: 0; }
